@@ -4,13 +4,13 @@
 </head>
 <body bgcolor="99ff66" text="#003300"> 
 <h2>CheckOut</h2>
-<form name="form" method="post action="javascript":void(0);">
+<form name="form" method="post" action="javascript:void(0);">
 <input type="text" value="0" name="txtP" size="7">product Price<br><br>
 <input type="text" name="txtT" size="7"> Total tax in Dollars<br><br>
 <input type="text" name="txtC" size="7"> Total Cost of the Product<br><br>
-<input type="button value="Calculate My total" name="btnSubmit" onClick="calcVB()">
+<input type="button" value="Calculate My total" name="btnSubmit" onClick="calcVB()">
 </form></body></html>
-<script language="javascript"> functioncalcVB()
+<script language="vbcript"> functioncalcVB()
 dim price, tax, total,cost
 price = document.form.txtP.value
 total=(price*tax)
@@ -19,7 +19,7 @@ cost = price+total
 document.form.txtC.value=formatCurrency(cost)
 end function
 </script>
-<script language = "JAVAscript">
+<script language = "vbcript">
 function getTaxVB()
 taxrate = 0.085
 getTaxVB = taxRate
